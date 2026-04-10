@@ -10,7 +10,22 @@ body {
     color: #000000;
     background-color: #fadeff;
     line-height: 1.6;
+    position: relative;
 }
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0; /* volvemos a normal */
+    background-image: url("/assets/FondoGeneral.png");
+    background-size: 100%; /* 👈 AQUÍ la hacemos más pequeña */
+    background-position: center;
+    background-repeat: no-repeat; /* 👈 evita que se repita */
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: -1;
+}
+
 
 header {
     position: fixed;
