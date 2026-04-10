@@ -160,7 +160,7 @@ header {
 }
 
 .story-container {
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.2);
     padding: 3rem;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -174,12 +174,22 @@ header {
     margin-bottom: 2rem;
 }
 
+
 .story-container p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
-    color: #555;
+    font-size: 1.15rem;
+    line-height: 1.9;
+    margin-bottom: 1.8rem;
+    color: rgba(0, 0, 0, 0.85);
+
+   font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: normal;
+
+    max-width: 65ch;         
+    text-align: justify;      
+    text-wrap: pretty;
 }
+
 
 .gallery-section {
     padding: 6rem 2rem 4rem;
