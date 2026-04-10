@@ -11,20 +11,22 @@ body {
     background-color: #fadeff;
     line-height: 1.6;
     position: relative;
+    min-height: 100vh;
 }
 
 body::before {
     content: "";
-    position: fixed;
-    inset: 0; /* volvemos a normal */
+    position: absolute;   /* ✅ CLAVE */
+    inset: 0;
     background-image: url("../assets/FondoGeneral.png");
-    background-size: 100%; /* 👈 AQUÍ la hacemos más pequeña */
+    background-size: 60%; /* 100% la hacía gigante */
     background-position: center;
-    background-repeat: no-repeat; /* 👈 evita que se repita */
+    background-repeat: no-repeat;
     opacity: 0.05;
     pointer-events: none;
-    z-index: -1;
+    z-index: 0;           /* ✅ NO negativo */
 }
+
 
 
 header {
